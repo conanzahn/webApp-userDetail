@@ -16,7 +16,6 @@ const UserInfo = () => {
         .then(res => (setUsers(res.data.results), setIsLoading(false)))
         .catch(err => err)
     }, [])
-    console.log(users);
 
     return (
         <div className='wrapper'>
