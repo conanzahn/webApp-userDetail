@@ -1,0 +1,187 @@
+@import '../../assets/css/variable.scss';
+@import '../../assets/css/breakpoints.scss';
+
+.card {
+    margin-bottom: 32px;
+    background: $white;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    @include breakpoints(md) {
+        margin-bottom: 24px;
+    }
+    @include breakpoints(sm) {
+        margin-bottom: 16px;
+    }
+    .content {
+        width: 100%;
+        .content-top {
+            display: flex;
+            .circle {
+                position: relative;
+                width: 48px;
+                height: 48px;
+                margin: 16px 0 0 16px;
+                border: 2px solid $yellow;
+                border-radius: 50%;
+                @include breakpoints(md) {
+                    margin: 23px 0 0 18px;
+                }
+                .icon {
+                    position: absolute;
+                    top: 19px;
+                    left: 17px;
+                    width: 7px;
+                    height: 7px;
+                    border: solid $primary-color;
+                    border-width: 2px 0 0 2px;
+                    transform: rotate(135deg);
+                }
+            }
+            .circle-active {
+                background-color: $yellow;
+                .icon {
+                    top: 17px;
+                    left: 19px;
+                    transform: rotate(-135deg);
+                }
+            }
+            .head {
+                flex: 1;
+                .title {
+                    margin: 16px 0 0 17px;
+                    font-family: $secondary-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $secondary-color;
+                    @include breakpoints(md) {
+                        margin: 24px 0 0 18px;
+                    }
+                    @include breakpoints(sm) {
+                        margin: 18px 16px 0 16px;
+                    }
+                }
+                .name {
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $primary-color;
+                    margin: 4px 0 0 16px;
+                    font-weight: 700;
+                    @include breakpoints(md) {
+                        font-size: 20px;
+                        margin: 2px 0 0 18px;
+                    }
+                    @include breakpoints(sm) {
+                        font-size: 20px;
+                        margin: 1px 0 0 16px;
+                    }
+                }
+            }
+            .photo-sm {
+                display: none;
+                @include breakpoints(sm) {
+                    display: flex;
+                    object-fit: contain;
+                    margin: 10px 24px 0 0;
+                }
+            }
+            .photo {
+                display: none;
+                @include breakpoints(md) {
+                    display: flex;
+                    object-fit: contain;
+                    margin: 16px 24px 4px 0;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .horizon-line {
+            border-top: 1px solid $line;
+            margin: 16px 23.4px 0 16px;
+            @include breakpoints(md) {
+                margin: 9px 24px 0 24px;
+            }
+            @include breakpoints(sm) {
+                margin: 8px 16px 0 16px;
+            }
+        }
+
+        .content-body {
+            display: flex;
+            justify-content: space-around;
+            @include breakpoints(sm) {
+                flex-direction: column;
+            }
+            .group {
+                margin: 16px 16px 6px 17px;
+                @include breakpoints(md) {
+                    margin: 16px 16px 8px 24px;
+                }
+                @include breakpoints(sm) {
+                    margin: 8px 0 5px 84px;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid $line;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+                .data {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $primary-color;
+                }
+                .label {
+                    display: flex;
+                    margin-top: 4px;
+                    font-family: $secondary-font;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: $describe-color;
+                    @include breakpoints(sm) {
+                        line-height: 15px;
+                        color: $secondary-color;
+                    }
+                }
+                .divide-line {
+                    border-top: 1px solid $line;
+                    margin: 16px 0 11px 0;
+                    @include breakpoints(md) {
+                        margin: 12px 0 6px 0;
+                    }
+                    @include breakpoints(sm) {
+                        margin: 14px 0 6px 0;
+                    }
+                }
+            }
+            .vertical-line {
+                border-left: 1px solid $line;
+                height: 43px;
+                margin: 19px 0 0 0; 
+                @include breakpoints(md) {
+                    margin: 16px 0 0px 0;
+                }
+                @include breakpoints(sm) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+    .photo {
+        margin-top: 8px;
+        margin-right: 12px;
+        @include breakpoints(md) {
+            display: none;
+        }
+        @include breakpoints(sm) {
+            display: none;
+        }
+    }
+}
+
+.card-active {
+    box-shadow: 0px 25px 20px rgba(172, 168, 129, 0.2), 0px 10px 20px rgba(197, 202, 209, 0.56);
+}
