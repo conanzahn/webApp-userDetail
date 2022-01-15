@@ -1,6 +1,8 @@
 # Implement a component of a WebApp
 
-This project using React with Typescript implement a component to show a user's details. Data fetched from API: [https://randomuser.me/api/](https://randomuser.me/api/). 
+This project using React with Typescript implement a component to show a user's details. Data fetched from [API](https://randomuser.me/api/). 
+
+Implementation deployed in github pages: [https://conanzahn.github.io/webApp-userDetail/](https://conanzahn.github.io/webApp-userDetail/), please click to check.
 
 
 ## Design & Layout
