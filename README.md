@@ -9,11 +9,16 @@ Implementation deployed in github pages: [https://conanzahn.github.io/webApp-use
 
 You can find the layout overview below:
 
+### There are responsive design for mobile, tablet and desktop view, reference to Bootstrap V5.0.0 breakpoints. 
+#### Desktop
+![layout](https://user-images.githubusercontent.com/54277153/149626545-4647869c-f37f-463c-ada0-7e0595194e17.jpg)
+#### Laptop
+![laptop](https://user-images.githubusercontent.com/54277153/149626598-7106d935-9b7a-4cdd-874c-765affa1c81a.jpg)
+#### Mobile
+![mobile](https://user-images.githubusercontent.com/54277153/149626603-ed76c524-ac04-4647-a57f-3cd3d3433b75.jpg)
 
-There are responsive design for mobile, tablet and desktop view, reference to Bootstrap V5.0.0 breakpoints. 
-
-The implemented component includes an active state (click any part of the component), which will show more user's information.
-
+### The implemented component includes an active state (click any part of the component), which will show more user's information.
+![desktop-active](https://user-images.githubusercontent.com/54277153/149626607-ec8d6ee4-58ed-4882-ab86-b6d41f7ed167.jpg)
 
 ## Structure
 ```bash
